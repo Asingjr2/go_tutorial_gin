@@ -1,0 +1,14 @@
+{{ template "header.html" .}}
+
+<h1> Hello Samus </h1>
+
+<!-- Creating unique urls for each item.  Needs to be represented in route file as well. -->
+{{range .payload }}
+    <a href="/article/view/{{.ID}}">
+        <h2>{{.Title}}</h2>
+    </a>
+
+    <p>{{.Content}}</p>
+{{end}}
+
+{{ template "footer.html" .}}

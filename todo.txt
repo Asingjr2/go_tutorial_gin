@@ -1,0 +1,2 @@
+Complete elements of tutorial.
+Clean up html and main.
